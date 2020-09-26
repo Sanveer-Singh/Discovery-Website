@@ -14,7 +14,7 @@
 								<div class="slider-caption slider-caption-center">
 								
 									<h2 data-caption-animate="fadeInUp">Making you financially savvy, <span style="color:#1E90FF;">one step at a time</span></h2>
-									<p data-caption-animate="fadeInUp" data-caption-delay="200">We will reward you for every bad habit you tranform into a good habit.</p>
+									<p data-caption-animate="fadeInUp" data-caption-delay="200">We will reward fixing bad habits.</p>
 									<p data-caption-animate="fadeInUp" data-caption-delay="200">Make your Future Better.</p>
 								</div>
 								
@@ -27,20 +27,20 @@
 								
 								<div class="slider-caption slider-caption-center">
 									<h2 data-caption-animate="fadeInUp"><span style="color:#1E90FF;">Only you can</span> change your life.</h2>
-									<p data-caption-animate="fadeInUp" data-caption-delay="200"><span  style="color:#1E90FF;">I_RateAdvisor</span> was created to make sure that you can more easily make <span style="color:#1E90FF;">informed</span> savvy decisions.</p>
+									<p data-caption-animate="fadeInUp" data-caption-delay="200"> You can trust <span  style="color:#1E90FF;">I_Rate_Advisor</span> to help you make <span style="color:#1E90FF;">informed</span> savvy decisions.</p>
 								</div>
 									
 							</div>
 						<div class="video-overlay" style="background-color: rgba(0,0,0,0.55);"></div>
 						</div>
-						<div class="swiper-slide dark" style="background-image: url('https://lh3.googleusercontent.com/proxy/IEOt0lNZwsCxCT1Vh6UTpd7efnLkjEfKONy6Y6LGJjXET5-lYtx5_ilELNMzWqbfgP_ZaXywcRW_NBSaqBU6VMApkvKSk-JBnMPqay-8ix_SMGPCAcWRBqO5TfLkWuM2rlJkYptnPKpouFyOpI6T09jwxs3F');">
+						<div class="swiper-slide dark" style="background-image: url('https://wallpapercave.com/wp/wp2446334.jpg');">
 						 <!-- background-position: center top; -->
 							<div class="container clearfix">
 						
 								
 								<div class="slider-caption" >
-									<h2 data-caption-animate="fadeInUp" >Bringing you <span style="color:#1E90FF;">convenience</span>,saving you <span style="color:#1E90FF;">time</span></h2>
-									<p data-caption-animate="fadeInUp" data-caption-delay="200">An innovative solution that brings convenience and efficiency to making good,safe decisions.</p>
+									<h2 data-caption-animate="fadeInUp" >Bringing you <span style="color:#1E90FF;">convenience</span>and saving you <span style="color:#1E90FF;">time</span></h2>
+									<p data-caption-animate="fadeInUp" data-caption-delay="200">An innovative solution that brings convenience and efficiency to making good, safe decisions.</p>
 								</div>
 							</div>
 								<div class="video-overlay" style="background-color: rgba(0,0,0,0.55);"></div>	
@@ -64,18 +64,18 @@
 					<div class="container clearfix">
 						<div class="heading-block center">
 						<h2>What is  <span  style="color:#1E90FF;">I_Rate_Advisor</span></h2>
-						<span>A platform created to enable the average South-African to be Financially savvy </span>
+						<span>A platform created to enable the average South-African to be financially savvy. </span>
 				</div>
 					<div class="container clearfix">
 						<div class="col_one_third nobottommargin">
 							<div class="feature-box media-box">
 								<div class="fbox-media">
-									<img src="https://wallpapercave.com/wp/wp2164154.jpg" alt="The problem?" style="width:300px;height:200px;"/>
+									<img src="https://wallpapercave.com/wp/wp2164154.jpg" alt="What is the problem?" style="width:300px;height:200px;"/>
 								</div>
 								<div class="fbox-desc">
-									<h3 style="color:#1E90FF;">SA needs Help.<span class="subtitle">Half of all South Africans were in debt in 2017.</span></h3>
-									<p>approximately half of the adult population were living below the poverty line.</p>
-									<p>Clearly this means most of South-Africa does not know how to properly manage their money, leading to many losses and later on difficult situations.</p>
+									<h3 style="color:#1E90FF;">SA needs Help!<span class="subtitle">50% of South African citizens were in debt in 2017.</span></h3>
+									<p>Last year, approximately half of the adult population were living below the poverty line.</p>
+									<p>This means most of South-Africa does not know how to properly manage their money, leading to many losses and later on difficult situations.</p>
 									<p>Who knows what effect lock-down has had on these numbers?</p>
 								</div>
 							</div>
@@ -88,9 +88,9 @@
 								</div>
 								<div class="fbox-desc">
 									<h3 style="color:#1E90FF;">Contributing factors: <span class="subtitle">Inability to find credible information</span></h3>
-									<p>Bad financial decisions, spending habits, and inability to see problems in their spending habits. </p>
-									<p>Lack of proper and realistic planning for the future.</p>
-									<p>Lack of availability of personalized advice on personal spending habits.</p>
+									<p>Bad financial decisions, bad spending habits, and the inability to realize this. </p>
+									<p>Lack of proper and realistic planning for the future due to ignorance.</p>
+									<p>Lack of access to personalize advice on spending.</p>
 								</div>
 							</div>
 						</div>
@@ -100,8 +100,10 @@
 									<img src="https://wallpapercave.com/wp/wp2446274.jpg" alt="How can I_Rate_Advisor help?" style="width:300px;height:200px;"/>
 								</div>
 								<div class="fbox-desc">
-									<h3 style="color:#1E90FF;">Our Solution: <span class="subtitle"> Will provide personalized analysis and incentivised recommendations for you and</span></h3>
-									<p>provide a clear and credible platform to find information about threats to your financial wellbeing.</p>
+									<h3 style="color:#1E90FF;">Our Solution: <span class="subtitle"></span></h3>
+									<p>We will provide personalized analysis on your spending.</p>	
+									<p>With this analysis we will provide incentivised goals.</p>
+									<p>We also provide trustworthy information on investment opportunities..</p>
 								</div>
 							</div>
 						</div>
