@@ -56,6 +56,33 @@
 
 			</div>
 			</section>
+	 <div id="page-menu" style="background-color: #1E90FF;">
+
+			<div id="page-menu-wrap"style="background-color: #1E90FF;">
+
+				<div class="container clearfix" style="background-color: #1E90FF;">
+
+					<div class="menu-title">All about <span>I_Rate_Advisor</span></div>
+
+					<nav class="one-page-menu" >
+						<ul>
+							<li><a href="#" data-href="#header"><div>Top</div></a></li>
+							<li><a href="#" data-href="#section-about"><div>Project overview</div></a></li>
+							<li><a href="#" data-href="#section-work"><div>Technology </div></a></li>
+							<li><a href="#" data-href="#section-team"><div>Meet us</div></a></li>
+							
+							<li><a href="#" data-href="#section-testimonials" class="no-offset"><div>What Makes It Great?</div></a></li>
+							
+						</ul>
+					</nav>
+
+					<div id="page-submenu-trigger"><i class="icon-reorder"></i></div>
+
+				</div>
+
+			</div>
+
+		</div><!-- #page-menu end -->
 	<!-- Content
 		============================================= -->
 		<section id="content">
@@ -70,13 +97,13 @@
 						<div class="col_one_third nobottommargin">
 							<div class="feature-box media-box">
 								<div class="fbox-media">
-									<img src="https://wallpapercave.com/wp/wp2164154.jpg" alt="What is the problem?" style="width:300px;height:200px;"/>
+									<img src="https://wallpapercave.com/wp/wp2164154.jpg" alt="what is the problem?" style="width:300px;height:200px;"/>
 								</div>
 								<div class="fbox-desc">
-									<h3 style="color:#1E90FF;">SA needs Help!<span class="subtitle">50% of South African citizens were in debt in 2017.</span></h3>
-									<p>Last year, approximately half of the adult population were living below the poverty line.</p>
-									<p>This means most of South-Africa does not know how to properly manage their money, leading to many losses and later on difficult situations.</p>
-									<p>Who knows what effect lock-down has had on these numbers?</p>
+									<h3 style="color:#1e90ff;">sa needs help!<span class="subtitle">50% of south african citizens were in debt in 2017.</span></h3>
+									<p>last year, approximately half of the adult population were living below the poverty line.</p>
+									<p>this means most of south-africa does not know how to properly manage their money, leading to many losses and later on difficult situations.</p>
+									<p>who knows what effect lock-down has had on these numbers?</p>
 								</div>
 							</div>
 						</div>
@@ -84,26 +111,26 @@
 						<div class="col_one_third nobottommargin">
 							<div class="feature-box media-box">
 								<div class="fbox-media">
-									<img src="https://wallpapercave.com/wp/wp2446261.jpg" alt="Why choose Us?" style="width:300px;height:200px;"/>
+									<img src="https://wallpapercave.com/wp/wp2446261.jpg" alt="why choose us?" style="width:300px;height:200px;"/>
 								</div>
 								<div class="fbox-desc">
-									<h3 style="color:#1E90FF;">Contributing factors: <span class="subtitle">Inability to find credible information</span></h3>
-									<p>Bad financial decisions, bad spending habits, and the inability to realize this. </p>
-									<p>Lack of proper and realistic planning for the future due to ignorance.</p>
-									<p>Lack of access to personalize advice on spending.</p>
+									<h3 style="color:#1e90ff;">contributing factors: <span class="subtitle">inability to find credible information</span></h3>
+									<p>bad financial decisions, bad spending habits, and the inability to realize this. </p>
+									<p>lack of proper and realistic planning for the future due to ignorance.</p>
+									<p>lack of access to personalize advice on spending.</p>
 								</div>
 							</div>
 						</div>
 						<div class="col_one_third nobottommargin col_last">
 							<div class="feature-box media-box">
 								<div class="fbox-media">
-									<img src="https://wallpapercave.com/wp/wp2446274.jpg" alt="How can I_Rate_Advisor help?" style="width:300px;height:200px;"/>
+									<img src="https://wallpapercave.com/wp/wp2446274.jpg" alt="how can i_rate_advisor help?" style="width:300px;height:200px;"/>
 								</div>
 								<div class="fbox-desc">
-									<h3 style="color:#1E90FF;">Our Solution: <span class="subtitle"></span></h3>
-									<p>We will provide personalized analysis on your spending.</p>	
-									<p>With this analysis we will provide incentivised goals.</p>
-									<p>We also provide trustworthy information on investment opportunities..</p>
+									<h3 style="color:#1e90ff;">our solution: <span class="subtitle"></span></h3>
+									<p>we will provide personalized analysis on your spending.</p>	
+									<p>with this analysis we will provide incentivised goals.</p>
+									<p>we also provide trustworthy information on investment opportunities..</p>
 								</div>
 							</div>
 						</div>

@@ -81,7 +81,7 @@
         
 		<!-- Header
 		============================================= -->
-		<header id="header" class="page-section full-header">
+		<header id="header" class=" page-section full-header">
 
 			<div id="header-wrap">
 
@@ -100,12 +100,13 @@
 					<nav id="primary-menu" class="one-page-menu">
 
 						<ul>
-						<li><a href="#" data-href="#header"><div>Start</div></a></li>
-							<li><a href="#" data-href="#section-about"><div>Project Overview</div></a></li>
+						<li><a href="About.aspx" data-href=""><div>About Us</div></a></li>
+						
+							<%--<li><a href="#" data-href="#section-about"><div>Project Overview</div></a></li>
 							<li><a href="#" data-href="#section-work"><div>Technology</div></a></li>
 							<li><a href="#" data-href="#section-team"><div>Team</div></a></li>
 							
-							<li><a href="#" data-href="#section-testimonials" class="no-offset"><div>Extras</div></a></li>
+							<li><a href="#" data-href="#section-testimonials" class="no-offset"><div>Extras</div></a></li>--%>
 							
 						</ul>
 
