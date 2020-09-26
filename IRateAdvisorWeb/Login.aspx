@@ -93,7 +93,7 @@
 
                 <div class="tabs divcenter nobottommargin clearfix" style="max-width: 500px;">
 
-                    <div class="btn-group">
+                   <%-- <div class="btn-group">
                         <div class="button">
                             <a href="#tab-login" style="text-decoration: none; color: white">Login</a>
                         </div>
@@ -101,7 +101,7 @@
                         <div class="button" style="background-color: #EEEEEE;" id="btnRegister" runat="server">
                         </div>
 
-                    </div>
+                    </div>--%>
 
 
 
@@ -139,7 +139,7 @@
                                                <%-- <asp:Button type="submit" class="button button-3d button-circle button-large" id="btnloginSubmit" text="login" runat="server" OnClick="btnLoginSubmit_Click"/>
                                                 --%><a href="Home.aspx" class="button button-3d button-circle button-large button-black"  > Cancel </a>
 
-                                                <a href="PasswordReset1.aspx" class="fright" target="_blank">Forgot Password?...</a>
+                                          <%--      <a href="PasswordReset1.aspx" class="fright" target="_blank">Forgot Password?...</a>--%>
                                             </div>
                             
                                     </div>
