@@ -344,13 +344,13 @@
 									<div class="slider-wrap">
 										<div class="slide">
 											<div class="testi-content">
-												<p>"The system has a lot of room for integration with the Discovery eco-system"</p>
+												<p>The system has a lot of room for integration with the Discovery eco-system</p>
 												
 											</div>
 										</div>
 										<div class="slide">
 											<div class="testi-content">
-												<p>"Specific personal bad habit replacement will incrementally increase Discoveries customer base for its products. "</p>
+												<p>Specific personal bad habit replacement will incrementally increase Discoveries customer base for its products. </p>
 												
 											</div>
 										</div>
