@@ -136,7 +136,7 @@
                                             <div class="col_full nobottommargin">
 
                                                 <%--<input type="button" class="button button-3d button-circle button-large" id="loginSubmit" name="loginSubmit" value="login" onclick="" />--%>
-                                               <asp:Button type="submit" class="button button-3d button-circle button-large" id="btnloginSubmit" text="login" runat="server" OnClick="btnLoginSubmit_Click"/>
+                                               <asp:Button type="submit" class="button button-3d button-circle button-large" id="btnloginSubmit" text="login" runat="server" OnClick="btnLoginSubmit_Click" style= "background-color : #1E90FF" />
                                                 <a href="About.aspx" class="button button-3d button-circle button-large button-black"  > Cancel </a>
 
                                           <%--      <a href="PasswordReset1.aspx" class="fright" target="_blank">Forgot Password?...</a>--%>
