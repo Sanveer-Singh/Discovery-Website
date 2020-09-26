@@ -117,7 +117,7 @@
 								</div>
 								<div class="fbox-desc">
 									<h3 style="color:#1E90FF;">Search and get immediate and accurate feedback on 'investments' that seem fishy.</h3>
-									<p><span style="color:#1E90FF;">I_Rate_Advisor</span> is your financially smart friend thats everywhere,and it will help you survive in a world with way too many scams. </p>
+									<p><span style="color:#1E90FF;">I_Rate_Advisor</span> is your financially smart friend that is everywhere,and it will help you survive in a world with way too many scams. </p>
 						
 								</div>
 							</div>
@@ -180,7 +180,7 @@
 							</div>
 							
 						</div>
-							<div>
+							<div class="container clearfix" style="padding-left:50px">
 								<div class="col_one_fourth nobottommargin center" data-animate="bounceIn" data-delay="400" style="padding-left:150px;padding-right:150px;">
 								<i class="i-plain i-xlarge divcenter nobottommargin icon-file-text"></i>
 								<h5>Task managment via trello.</h5>
@@ -203,11 +203,11 @@
 				<section id="section-team" class="page-section topmargin-lg">
 
 					<div class="heading-block center">
-							<h2>The minds behind <span  style="color:#1E90FF;">Four Paws</span> :</h2>
-							<h4>Developed by <span style="color:#1E90FF;">IMPERIUM</span></h4>
+							<h2>The minds behind <span  style="color:#1E90FF;">I_Rate_Advisor</span> :</h2>
+							<h4>Developed by <span style="color:#1E90FF;">CBlunt</span></h4>
 							
-							<span>A vibrant, energetic and fun group of third year IT students who were once a team founded  solely to do the third year project . Today they are friends who have shared nerve wrecking moments, frustration filled late nights , and the joy of seeing thier goals and this project come to realisation.</span>
-							<h4>Mentored by <span style="color:#1E90FF;">Mr Blauw</span></h4>
+							<span>A vibrant, energetic and fun group of IT students who were once just fellow students. Today they are friends who have shared nerve wrecking moments, frustration filled late nights , and the joy of seeing thier goals and this project come to realisation.</span>
+			
 						</div>
 
 					<div class="container clearfix">
@@ -216,11 +216,11 @@
 
 							<div class="team team-list clearfix">
 								<div class="team-image">
-									<img src="images/jarreddp.jpg" alt="Jarred orfao" style="width:300px;height:400px; object-fit:cover"/>
+									<img src="https://cdn.hubilo.com/speaker/280747/350/1335_8460_028767001600625195.jpeg" alt="Jarred orfao" style="width:300px;height:400px; object-fit:cover"/>
 								</div>
 								<div class="team-desc">
-									<div class="team-title"><h4>Jarred Orfao</h4><span style="color:#1E90FF;">Mobile Developer</span></div>
-									<div class="team-content">"3rd year was a real time crunch. Team work is essential for more than just the project. Sacrifices are continuously made throughout the year. Mobile development was at first exciting but that changed when bugs in the actual platform began to surface. Overall it is an experience I will never forget and forever cherish because of the amount of knowledge I gained throughout the year. My advice for the upcoming student would be choose a team that has the skills to balance out and complete the workload or choose a team that makes learning new skills enjoyable"-Jarred</div>
+									<div class="team-title"><h4>Jarred Orfao</h4><span style="color:#1E90FF;">ML Developer</span></div>
+									<div class="team-content">"How do I get more cookies?"-Jarred</div>
 								
 								</div>
 							</div>
@@ -235,10 +235,7 @@
 								</div>
 								<div class="team-desc">
 									<div class="team-title"><h4>Jean Boguo</h4><span style="color:#1E90FF; object-fit:cover">Support / Back-end developer</span></div>
-									<div class="team-content">"Third year is the perfect example of the saying "life is a box of chocolates cause you never know what you're going to get". For some moments
-it's smooth sailings then for some moments its like being thrown into a stormy sea on Jupiter. But regardless one thing to remember is that 
-regardless of what the process feels like, you will get to the end and look back and say to yourself: "why did I stress so much". I guess what 
-I'm trying to say is that chocolate is chocolate at the end of the day. Also if you want the number one head band come talk to me!"-Jean</div>
+									<div class="team-content">"'My pc cant run zoom.'"-Jean</div>
 									
 								</div>
 							</div>
@@ -251,11 +248,11 @@ I'm trying to say is that chocolate is chocolate at the end of the day. Also if 
 
 							<div class="team team-list clearfix">
 								<div class="team-image">
-									<img src="images/justindpreal.jpg" alt="Justin McGowin" style="width:300px;height:400px; object-fit:cover"/>
+									<img src="https://cdn.hubilo.com/speaker/280747/350/4990_8529_987014001600625269.jpeg" alt="Justin McGowin" style="width:300px;height:400px; object-fit:cover"/>
 								</div>
 								<div class="team-desc">
-									<div class="team-title"><h4>Justin McGowin</h4><span style="color:#1E90FF;">Web Front End Developer</span></div>
-									<div class="team-content">"I couldnt ask for a better team to be with when it came to my 3rd year. The support and dedication was unbelievable and it taught me what hard work looks like. When I grow up I want to be like them. Third year was intense with deadlines that I thought where easily managible. What I learnt was team management is essential as well as communication amongst your peers, however I enjoyed every minute of it, even the late nights and the struggles in the morning. I learnt a bucket load more about web services and the detail needed in creating them. I also saw the value in team meetings. The more the better."-Justin</div>
+									<div class="team-title"><h4>Ruan Spijkerman</h4><span style="color:#1E90FF;">ML Developer</span></div>
+									<div class="team-content">"I am sure I asked for alcoholic"-Ruan</div>
 									
 								</div>
 							</div>
@@ -266,13 +263,12 @@ I'm trying to say is that chocolate is chocolate at the end of the day. Also if 
 
 							<div class="team team-list clearfix">
 								<div class="team-image">
-									<img src="images/sansdp.jpg" alt="Sanveer Singh" style="width:300px;height:400px; object-fit:cover"/>
+									<img src="https://cdn.hubilo.com/speaker/280747/350/2589_9815_681552001600625235.jpeg" alt="Sanveer Singh" style="width:300px;height:400px; object-fit:cover"/>
 								</div>
 								<div class="team-desc">
-									<div class="team-title"><h4>Sanveer Singh</h4><span style="color:#1E90FF;">Team Leader</span></div>
-									<div class="team-content">"During this project I was responsible for leading, and organising a team which posed many challenges. This experience has allowed me to make some awesome friends (whom I absolutely admire), learn important skills like co-ordination and persistence. I had a team that supported me throughout the process.I learned just how much work is involved in creating a system and trying to get it to a reasonable level of quality.I had a ton of fun under our mentor who managed to teach us how a tiny speck of his knowledeg. I hope you enjoy our demonstration on projects day. See you there."-Sanveer </div>
-								
-									
+									<div class="team-title"><h4>Sanveer Singh</h4><span style="color:#1E90FF;">Temp Spokesperson</span></div>
+									<div class="team-content">"Welcome to the CBlunt breakout room"-Sanveer </div>
+
 								
 								</div>
 							</div>
@@ -283,7 +279,7 @@ I'm trying to say is that chocolate is chocolate at the end of the day. Also if 
 
 					<div class="section parallax" style="background-image: url('images/parallax/3.jpg'); padding: 100px 0;" data-stellar-background-ratio="0.3">
 						<div class="heading-block center nobottomborder nobottommargin">
-							<h2>"When I look into the eyes of an animal, I do not see an animal. I see a living being. I see a friend. I feel a soul."― Anthony Douglas Williams</h2>
+							<h2>Wealth is the ability to fully experience life. If a man is proud of his wealth, he should not be praised until it is known how he employs it.</h2>
 						</div>
 					</div>
 
@@ -310,8 +306,8 @@ I'm trying to say is that chocolate is chocolate at the end of the day. Also if 
 						<div class="col_half nobottommargin col_last">
 
 							<div class="heading-block center">
-								<h4>What makes <span style="color:#1E90FF;">Four paws</span> so good ?</h4>
-								<span>We added some really cool features that make it worth while.</span>
+								<h4>What makes <span style="color:#1E90FF;">I_Rate_Advisor</span> so good ?</h4>
+								<span>The Future Prospects.</span>
 							</div>
 
 							<div class="fslider testimonial testimonial-full nobgcolor noborder noshadow nopadding" data-arrows="false">
@@ -319,19 +315,19 @@ I'm trying to say is that chocolate is chocolate at the end of the day. Also if 
 									<div class="slider-wrap">
 										<div class="slide">
 											<div class="testi-content">
-												<p>Having the list of pets that can be adopted sbe ordered by a specific attribute will help you find your ideal pet faster(Accross multiple organisations and areas).</p>
+												<p>"The system has a lot of room for integration with the Discovery eco-system"</p>
 												
 											</div>
 										</div>
 										<div class="slide">
 											<div class="testi-content">
-												<p>Basic auto generated twitter posts help organisations give pets added exposure in the most time effective way.</p>
+												<p>"Specific personal bad habit replacement will incrementally increase Discoveries customer base for its products. "</p>
 												
 											</div>
 										</div>
 										<div class="slide">
 											<div class="testi-content">
-												<p>Dynamic filterable reports will help organisations and users make better informed decsisions</p>
+												<p>Less financially irresponsible behavior leads to less claims.</p>
 												
 											</div>
 										</div>
