@@ -12,8 +12,7 @@ namespace IRateAdvisorWeb
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            Display.InnerHtml  = HtmlStringGenerator.GetDynamicReportDisplayString("This is a name", "https://wallpapercave.com/wp/wp2446333.jpg", "Field desc1","Field1","Field desc2", "Field2", "Field desc3", "Field3");
-
+         
         }
     }
 }
