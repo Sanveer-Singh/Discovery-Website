@@ -101,7 +101,7 @@
 
 						<ul>
 						<li><a href="About.aspx" data-href=""><div>About Us</div></a></li>
-							<li><a href="login.aspx" data-href=""><div>Login/Register</div></a></li>
+							<li><a href="login.aspx" data-href=""><div>Login</div></a></li>
 						
 							<%--<li><a href="#" data-href="#section-about"><div>Project Overview</div></a></li>
 							<li><a href="#" data-href="#section-work"><div>Technology</div></a></li>
@@ -141,7 +141,7 @@
 								<img src="https://cdn.discordapp.com/attachments/739799085372014656/759375342653014016/unknown.png" alt="" class="footer-logo"/>
 								<p>We believe <strong>every human</strong> deserves the <strong> oppertunity</strong> to create <strong>wealth</strong>.</p>
 								<br/>
-								<p>Developed for<strong>Discovery</strong> who were an invaluable </p>
+								<p>Developed for<strong> Discovery</strong> who were an invaluable during the development process. </p>
 							</div>
 						</div>
 
@@ -155,10 +155,10 @@
 				</div>
 					<div class="col_one_third col_last">
 						<div class="widget widget_links clearfix">
-								<h4>For the presentation</h4>
+								<h4></h4>
 								<ul>
-									<li><a href="#">Documentation can be given on request, please email sanveer001@gmail.com</a></li>
-									<li><a href="#">Any and all Feedback would be appreciated</a></li>
+									<li><a href="#">Documentation can be given on request, please email sanveer001@gmail.com .</a></li>
+									<li><a href="#">Any and all Feedback would be appreciated.</a></li>
 									<li><a href="#">Please get in touch.</a></li>
 									<li><a href="#">Thank you for your time and effort.</a></li>
 								</ul>

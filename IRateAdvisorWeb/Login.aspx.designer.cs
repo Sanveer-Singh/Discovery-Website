@@ -15,13 +15,13 @@ namespace IRateAdvisorWeb
     {
 
         /// <summary>
-        /// loginUsername control.
+        /// LoginUserName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText loginUsername;
+        protected global::System.Web.UI.WebControls.TextBox LoginUserName;
 
         /// <summary>
         /// Password1 control.
@@ -40,5 +40,14 @@ namespace IRateAdvisorWeb
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl error1;
+
+        /// <summary>
+        /// btnloginSubmit control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnloginSubmit;
     }
 }

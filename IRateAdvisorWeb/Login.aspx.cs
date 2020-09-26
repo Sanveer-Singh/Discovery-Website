@@ -13,5 +13,10 @@ namespace IRateAdvisorWeb
         {
 
         }
+
+        protected void btnLoginSubmit_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

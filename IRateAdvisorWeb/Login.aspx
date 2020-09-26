@@ -117,14 +117,14 @@
                                             </div>
                                             <div class="col_full">
                                                 <label for="loginUsername">Username:</label>
-                                                <input type="text" id="loginUsername" name="loginUsername" tabindex="1" value="" placeholder="Username" class="sm-form-control required" autofocus runat="server" />
+                                                <asp:TextBox ID="LoginUserName" runat="server" tabindex="1" value="" placeholder="Username" class="sm-form-control required"></asp:TextBox>
                                             </div>
 
                                             <div class="col_full">
                                                 <label for="loginPassword">Password:</label>
                                                 <input type="password" id="Password1" name="loginPassword" tabindex="2" value="" class="sm-form-control required" placeholder="Password" runat="server"/>
                                                 <!-- the visibility switch-->
-                                            <br>
+                                            <br/>
                                             </div>
 
                                             <div class="col_full" id="error1" runat="server" style="color: red">
@@ -136,8 +136,8 @@
                                             <div class="col_full nobottommargin">
 
                                                 <%--<input type="button" class="button button-3d button-circle button-large" id="loginSubmit" name="loginSubmit" value="login" onclick="" />--%>
-                                               <%-- <asp:Button type="submit" class="button button-3d button-circle button-large" id="btnloginSubmit" text="login" runat="server" OnClick="btnLoginSubmit_Click"/>
-                                                --%><a href="Home.aspx" class="button button-3d button-circle button-large button-black"  > Cancel </a>
+                                               <asp:Button type="submit" class="button button-3d button-circle button-large" id="btnloginSubmit" text="login" runat="server" OnClick="btnLoginSubmit_Click"/>
+                                                <a href="About.aspx" class="button button-3d button-circle button-large button-black"  > Cancel </a>
 
                                           <%--      <a href="PasswordReset1.aspx" class="fright" target="_blank">Forgot Password?...</a>--%>
                                             </div>
