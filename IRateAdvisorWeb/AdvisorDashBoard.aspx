@@ -1,8 +1,10 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="AdvisorDashBoard.aspx.cs" Inherits="IRateAdvisorWeb.AdvisorDashBoard" %>
+
+<%@ Register Assembly="System.Web.DataVisualization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" Namespace="System.Web.UI.DataVisualization.Charting" TagPrefix="asp" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <div class="content-wrap">
         <div class="container clearfix">
-                     <div id="Display" class="events small-thumbs" style="width:100%; padding:20px; " runat="server"></div>  
+            
    
         </div>
     </div>
