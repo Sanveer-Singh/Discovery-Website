@@ -28,7 +28,7 @@
                      var textBox = $("#A" + ID);
                      strKV += ID + ":" + textBox.prop('checked') +"[";
                  });
-                 alert(strKV);
+                 //alert(strKV);
                  //alert("Questionnaire.aspx?answers=" + strKV);
                  window.location.href = "Questionnaire.aspx?answers=" + strKV;
                  return false;
