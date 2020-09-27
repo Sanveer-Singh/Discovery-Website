@@ -16,30 +16,47 @@ namespace IRateAdvisorWeb
 
         protected async void Page_Load(object sender, EventArgs e)
         {
-            if (Session["Percentages"] is null )
-            {
-                Response.Redirect("UserInput.aspx",false);
+            var _tier = Convert.ToInt32(Session["D_Tier"]);
+            var total = Convert.ToDouble(Session["Total"]);
+            var percents = (List<double>)Session["Percentages"];
+            var values = (List<double>)Session["Rand values"];
+
+
+
+
+            string[] tiers = { "Blue","Bronze", "Silver", "Gold" };
+            string[] colours = { "#2c5cde", "#ee9850", "#bfc1c3", "#e3b72e" };
+            string displayTier = "";
+            string displayNextTier = "";
+
+            int DiscoveryTier = _tier;
+            displayTier = tiers[DiscoveryTier-1];
+
+            CurrentTier.InnerText = displayTier;
+            CurrentTier.Style.Add("color", colours[DiscoveryTier-1]);
+
+           
+
+            int nextTier = DiscoveryTier;
+            if (DiscoveryTier < 4) {
+
+                nextTier = DiscoveryTier + 1;
             }
-            else
-            {
-                var tier = Convert.ToInt32(Session["D_Tier"]);
-                var total = Convert.ToDouble(Session["Total"]);
-                var percents = (List<double>)Session["Percentages"];
-                var values = (List<double>)Session["Rand values"];//
-                var DiscoveryTier = client.KMeansAnalysis_postDiscoveryTierAsync(total, percents);
-                double  income = 0;
-                foreach (var val in values )
-                {
-                    income += (double)val;
-                }
-                ChartSetup(percents);
-                try
-                {
-                    var temp = await client.KMeansAnalysis_getClusterCenterAsync(income,tier);
-                    percents = temp.ToList();
-                }
-                catch (Exception ex)
-                {
+
+            displayNextTier = tiers[nextTier-1];
+
+            TierAbove.InnerText = displayNextTier;
+            TierAbove.Style.Add("color", colours[nextTier-1]);
+
+            var shouldSpend = await client.KMeansAnalysis_getTierSpendAsync(total,nextTier);
+
+            var tierAbovePercent = client.KMeansAnalysis_getClusterCenterAsync(total, nextTier);
+
+            /* 1 - alcohol
+             * 2 - takeout
+             * 3 - cash
+             * 4 - entertainment
+             */
 
                 }
 
