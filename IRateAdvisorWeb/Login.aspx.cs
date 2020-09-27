@@ -1,4 +1,5 @@
-﻿using System;
+﻿using IRateAdvisorWeb.Services;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -9,13 +10,16 @@ namespace IRateAdvisorWeb
 {
     public partial class Login : System.Web.UI.Page
     {
+        private bool isBusy= false;
         protected void Page_Load(object sender, EventArgs e)
         {
 
         }
 
-        protected void btnLoginSubmit_Click(object sender, EventArgs e)
+        protected async void btnLoginSubmit_Click(object sender, EventArgs e)
         {
+            if (isBusy) return;
+            isBusy = true;
             // steps :
             // get input from the form 
 
@@ -31,6 +35,42 @@ namespace IRateAdvisorWeb
             string username = LoginUserName.Text;
             // ===label of type input
             string password = Password1.Value;
+
+            using(Client client = new Client())
+            {
+                try
+                {
+                    var response = await client.GeneralUsers_LoginUserAsync(username, password);
+                    //set the session variables
+                    if(response != null)
+                    {
+                        Session["USERID"] = response.UserId;
+                        Session["USERNAME"] = response.Username;
+
+                        var user = await client.Users_GetUsersAsync(response.UserId);
+
+                        if(user != null)
+                        {
+                            Session["CLUSTERID"] = user.ClusterId;
+
+
+                        }
+
+                        var employee = await client.
+
+
+                    }
+
+                }catch(Exception ex)
+                {
+
+                }
+                finally
+                {
+                    isBusy = false;
+                }
+            }
+
            
             //IRateAdvisorWeb.Client client = new IRateAdvisorWeb.Client();
             // var result = await client.LoginUserAsync(Username,Pass);
