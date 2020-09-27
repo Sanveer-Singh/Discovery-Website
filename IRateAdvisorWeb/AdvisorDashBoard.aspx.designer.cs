@@ -31,6 +31,7 @@ namespace IRateAdvisorWeb
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl tier;
+        //protected global::System.Web.UI.HtmlControls.HtmlGenericControl tier;
 
         /// <summary>
         /// TierAbove control.
@@ -48,7 +49,7 @@ namespace IRateAdvisorWeb
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl MyGoal;
+       // protected global::System.Web.UI.HtmlControls.HtmlGenericControl MyGoal;
 
         /// <summary>
         /// MyReward control.
@@ -57,6 +58,6 @@ namespace IRateAdvisorWeb
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl MyReward;
+       // protected global::System.Web.UI.HtmlControls.HtmlGenericControl MyReward;
     }
 }

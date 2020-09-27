@@ -21,9 +21,9 @@ namespace IRateAdvisorWeb
             string _Utilities,_Transport_Petrol, _Rent , _Paying_Loans, 
                     _Saving_Investment, _Insurance_Medical,_Education,_Communication,
                     _Takeoutfood,_Groceries,_Alcohol_Cigarettes,_Entertainment,
-                    _PersonalFamily,_Clothing,_Cash,_Other,_Income = "";
+                    _PersonalFamily,_Clothing,_Cash,_Other = "";
 
-            double[] values = new double[16];
+            List<double> values = new List<double>();
 
             _Utilities = Utilities.Text;
             _Transport_Petrol = Transport.Text;
@@ -41,28 +41,36 @@ namespace IRateAdvisorWeb
             _Cash = Cash.Text;
             _Other = Other.Text;
             _Communication = Communication.Text;
-            _Income = Income.Text;
 
-            values[0] = Convert.ToDouble(_Utilities);
-            values[1] = Convert.ToDouble(_Transport_Petrol);
-            values[1] = Convert.ToDouble(_Rent);
-            values[1] = Convert.ToDouble(_Paying_Loans);
-            values[1] = Convert.ToDouble(_Saving_Investment);
-            values[1] = Convert.ToDouble(_Insurance_Medical);
-            values[1] = Convert.ToDouble(_Education);
-            values[1] = Convert.ToDouble(_Takeoutfood);
-            values[1] = Convert.ToDouble(_Groceries);
-            values[1] = Convert.ToDouble(_Alcohol_Cigarettes);
-            values[1] = Convert.ToDouble(_Entertainment);
-            values[1] = Convert.ToDouble(_PersonalFamily);
-            values[1] = Convert.ToDouble(_Clothing);
-            values[1] = Convert.ToDouble(_Cash);
-            values[1] = Convert.ToDouble(_Other);
-            values[1] = Convert.ToDouble(_Communication);
+
+            values.Add(Convert.ToDouble(_Utilities));
+            values.Add(Convert.ToDouble(_Transport_Petrol));
+            values.Add(Convert.ToDouble(_Rent));
+            values.Add(Convert.ToDouble(_Paying_Loans));
+            values.Add(Convert.ToDouble(_Saving_Investment));
+            values.Add(Convert.ToDouble(_Insurance_Medical));
+            values.Add(Convert.ToDouble(_Education));
+            values.Add(Convert.ToDouble(_Takeoutfood));
+            values.Add(Convert.ToDouble(_Groceries));
+            values.Add(Convert.ToDouble(_Alcohol_Cigarettes));
+            values.Add(Convert.ToDouble(_Entertainment));
+            values.Add(Convert.ToDouble(_PersonalFamily));
+            values.Add(Convert.ToDouble(_Clothing));
+            values.Add(Convert.ToDouble(_Cash));
+            values.Add(Convert.ToDouble(_Other));
+            values.Add(Convert.ToDouble(_Communication));
 
             double total = values.Sum();
-            
-            var percents = await client.KMeansAnalysis_postRandToPercentAsync(values);
+            List<double> percents = null;
+            try
+            {
+               var temp = await client.KMeansAnalysis_postRandToPercentAsync(values);
+                percents = temp.ToList();
+            }
+            catch (Exception ex) 
+            { 
+
+            }
 
             int tier = await client.KMeansAnalysis_postDiscoveryTierAsync(total, percents);
 
@@ -70,6 +78,7 @@ namespace IRateAdvisorWeb
             Session["Total"] = total;
             Session["Percentages"] = percents;
             Session["Rand values"] = values;
+
             
         }
     }
