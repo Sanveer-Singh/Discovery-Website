@@ -32,6 +32,8 @@ namespace IRateAdvisorWeb.Services
         private bool disposedValue2;
         private bool disposedValue3;
         private bool disposedValue4;
+        private bool disposedValue5;
+        private bool disposedValue6;
 
         public Client()
         {
@@ -1963,7 +1965,7 @@ namespace IRateAdvisorWeb.Services
                 throw new System.ArgumentNullException("spendCategoriesRands");
 
             var urlBuilder_ = new System.Text.StringBuilder();
-            urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/postRandToPercent");
+            urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/api/kMeansAnalysis/postRandToPercent");
 
             var client_ = _httpClient;
             try
@@ -3064,7 +3066,7 @@ namespace IRateAdvisorWeb.Services
 
         protected virtual void Dispose(bool disposing)
         {
-            if (!disposedValue4)
+            if (!disposedValue6)
             {
                 if (disposing)
                 {
@@ -3073,7 +3075,7 @@ namespace IRateAdvisorWeb.Services
 
                 // TODO: free unmanaged resources (unmanaged objects) and override finalizer
                 // TODO: set large fields to null
-                disposedValue4 = true;
+                disposedValue6 = true;
             }
         }
 
