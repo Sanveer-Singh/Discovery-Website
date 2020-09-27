@@ -38,7 +38,7 @@ namespace IRateAdvisorWeb.Utilities
             display += "</div>";
             // div 5 opened
             display += "<div class='entry-c'>";
-            display += "<h3 style='display: inline;'>"+Field1desc +" </h3><h4 style='display: inline;'>" + Field1 + "</h4>";// can be for employee reported 
+            display += "<h3 style='display: inline;'>"+Field1desc +":  </h3><h3 style='display: inline;'>" + Field1 + "</h3>";// can be for employee reported 
             // div 6 opened
             display += "<div class='entry-content'>";
 
@@ -59,8 +59,10 @@ namespace IRateAdvisorWeb.Utilities
             // end of table 
             display += "</tbody></table>";
             display += "</div>";
+            display += "</div></div></div><";
 
-      
+
+
             return display;
         }
     }   
