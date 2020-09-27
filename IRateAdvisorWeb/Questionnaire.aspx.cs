@@ -61,7 +61,8 @@ namespace IRateAdvisorWeb
                     var response = await client.Answers_PostAnswersAsync(Convert.ToInt32(Session["USERID"]), answerList);
                     if (response != null)
                     {
-                        Response.Redirect("About.aspx", false);
+                        Session["QResults"] = response;
+                        Response.Redirect("ScamResultsPage.aspx", false);
                     }
                 }
             }
