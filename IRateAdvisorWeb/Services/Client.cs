@@ -23,6 +23,7 @@ namespace IRateAdvisorWeb.Services
     [System.CodeDom.Compiler.GeneratedCode("NSwag", "13.7.0.0 (NJsonSchema v10.1.24.0 (Newtonsoft.Json v11.0.0.0))")]
     public partial class Client:IDisposable
     {
+
         private string _baseUrl = "https://irateadvisorapi.azurewebsites.net/";
         private System.Net.Http.HttpClient _httpClient;
         private System.Lazy<Newtonsoft.Json.JsonSerializerSettings> _settings;

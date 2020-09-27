@@ -97,7 +97,7 @@
                                     <div class="nobottommargin">
                                        
                                             <div class="fancy-title title-center title-dotted-border">
-                                                <h3>Login to your Account</h3>
+                                                <h3>Enter Expenses</h3>
                                             </div>
                                             <div class="col_full">
                                                 <label for="Income">Income:</label>
@@ -125,7 +125,7 @@
                                                 <asp:TextBox ID="Saving" runat="server" tabindex="5" value="" placeholder="Saving" class="sm-form-control required"></asp:TextBox>
                                             </div>
                                             <div class="col_full">
-                                                <label for="loginUsername">Username:</label>
+                                                <label for="loginUsername">Insurance:</label>
                                                 <asp:TextBox ID="Insurance" runat="server" tabindex="6" value="" placeholder="Insurance" class="sm-form-control required"></asp:TextBox>
                                             </div>
                                             <div class="col_full">

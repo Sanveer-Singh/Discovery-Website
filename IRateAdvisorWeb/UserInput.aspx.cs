@@ -21,7 +21,7 @@ namespace IRateAdvisorWeb
             string _Utilities,_Transport_Petrol, _Rent , _Paying_Loans, 
                     _Saving_Investment, _Insurance_Medical,_Education,_Communication,
                     _Takeoutfood,_Groceries,_Alcohol_Cigarettes,_Entertainment,
-                    _PersonalFamily,_Clothing,_Cash,_Other,_Income = "";
+                    _PersonalFamily,_Clothing,_Cash,_Other = "";
 
             double[] values = new double[16];
 
@@ -41,7 +41,7 @@ namespace IRateAdvisorWeb
             _Cash = Cash.Text;
             _Other = Other.Text;
             _Communication = Communication.Text;
-            _Income = Income.Text;
+        
 
             values[0] = Convert.ToDouble(_Utilities);
             values[1] = Convert.ToDouble(_Transport_Petrol);
