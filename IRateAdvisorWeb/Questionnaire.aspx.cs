@@ -84,7 +84,7 @@ namespace IRateAdvisorWeb
                     {
                         StringBuilder sb = new StringBuilder();
                         sb.Append("<div class='fancy-title title-center title-dotted-border'>");
-                        sb.Append("<h3>Answer the following questions</h3>");
+                        sb.Append("<h3>We could not find your threat. Please answer the following questions</h3>");
                         sb.Append(" </div>");
 
                         int counter = 1;
