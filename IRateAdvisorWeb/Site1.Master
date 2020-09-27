@@ -101,7 +101,7 @@
 
 						<ul>
 						<li><a href="About.aspx" data-href=""><div>About Us</div></a></li>
-							<li><a href="login.aspx" data-href=""><div>Login</div></a></li>
+							<li><a id="login_register" runat="server" href="login.aspx" data-href=""><div>Login</div></a></li>
 						
 							<%--<li><a href="#" data-href="#section-about"><div>Project Overview</div></a></li>
 							<li><a href="#" data-href="#section-work"><div>Technology</div></a></li>

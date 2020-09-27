@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="Register.aspx.cs" Inherits="IRateAdvisorWeb.Register" %>
+﻿<%@ Page  Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="Register.aspx.cs" Inherits="IRateAdvisorWeb.Register" Async="true" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     		     <script src="js/jquery.js"></script>
     <script type="text/javascript">
@@ -116,26 +116,26 @@
                                             </div>
                                          <div class="col_full">
                                                 <label for="loginUsername">Name:</label>
-                                                <asp:TextBox ID="TextBox1" runat="server" tabindex="1" value="" placeholder="Username" class="sm-form-control required"></asp:TextBox>
+                                                <asp:TextBox ID="RegisterName" runat="server" tabindex="1" value="" placeholder="Name" class="sm-form-control required"></asp:TextBox>
                                             </div>
                                         <div class="col_full">
                                                 <label for="loginUsername">Surname:</label>
-                                                <asp:TextBox ID="TextBox2" runat="server" tabindex="2" value="" placeholder="Username" class="sm-form-control required"></asp:TextBox>
+                                                <asp:TextBox ID="RegisterSurname" runat="server" tabindex="2" value="" placeholder="Surname" class="sm-form-control required"></asp:TextBox>
                                             </div>
                                             <div class="col_full">
                                                 <label for="loginUsername">Username:</label>
-                                                <asp:TextBox ID="LoginUserName" runat="server" tabindex="3" value="" placeholder="Username" class="sm-form-control required"></asp:TextBox>
+                                                <asp:TextBox ID="RegisterUserName" runat="server" tabindex="3" value="" placeholder="Username" class="sm-form-control required"></asp:TextBox>
                                             </div>
 
                                             <div class="col_full">
                                                 <label for="loginPassword">Password:</label>
-                                                <input type="password" id="Password1" name="loginPassword" tabindex="4" value="" class="sm-form-control required" placeholder="Password" runat="server"/>
+                                                <input type="password" id="RegisterPassword1" name="loginPassword" tabindex="4" value="" class="sm-form-control required" placeholder="Password" runat="server"/>
                                                 <!-- the visibility switch-->
                                             <br/>
                                             </div>
                                             <div class="col_full">
                                                 <label for="loginPassword">Confirm Password:</label>
-                                                <input type="password" id="Password2" name="loginPassword" tabindex="5" value="" class="sm-form-control required" placeholder="Password" runat="server"/>
+                                                <input type="password" id="RegisterPassword2" name="loginPassword" tabindex="5" value="" class="sm-form-control required" placeholder="Password" runat="server"/>
                                                 <!-- the visibility switch-->
                                             <br/>
                                             </div>

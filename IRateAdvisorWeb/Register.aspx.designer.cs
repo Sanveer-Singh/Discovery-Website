@@ -15,49 +15,49 @@ namespace IRateAdvisorWeb
     {
 
         /// <summary>
-        /// TextBox1 control.
+        /// RegisterName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox1;
+        protected global::System.Web.UI.WebControls.TextBox RegisterName;
 
         /// <summary>
-        /// TextBox2 control.
+        /// RegisterSurname control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox2;
+        protected global::System.Web.UI.WebControls.TextBox RegisterSurname;
 
         /// <summary>
-        /// LoginUserName control.
+        /// RegisterUserName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox LoginUserName;
+        protected global::System.Web.UI.WebControls.TextBox RegisterUserName;
 
         /// <summary>
-        /// Password1 control.
+        /// RegisterPassword1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputPassword Password1;
+        protected global::System.Web.UI.HtmlControls.HtmlInputPassword RegisterPassword1;
 
         /// <summary>
-        /// Password2 control.
+        /// RegisterPassword2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputPassword Password2;
+        protected global::System.Web.UI.HtmlControls.HtmlInputPassword RegisterPassword2;
 
         /// <summary>
         /// error1 control.
