@@ -10,22 +10,39 @@
 
         </div>
         <div class="heading-block center">
-         <asp:Chart ID="Chart1" runat="server" Height="500" Width="500">
+         <asp:Chart ID="Chart1" runat="server" Height="500" Width="800">
+			 
            <Series>
 		<asp:Series Name="Testing" YValueType="Int32">
 
 			<Points>
-				<asp:DataPoint AxisLabel="Test 1" YValues="10" />
-				<asp:DataPoint AxisLabel="Test 2" YValues="20" />
+				<asp:DataPoint AxisLabel="Utilities" YValues="10" />
+				<asp:DataPoint AxisLabel="Transport" YValues="20" />
+				<asp:DataPoint AxisLabel="Rent" YValues="30" />
+				<asp:DataPoint AxisLabel="Loans" YValues="40" />
 
-				<asp:DataPoint AxisLabel="Test 3" YValues="30" />
-				<asp:DataPoint AxisLabel="Test 4" YValues="40" />
+				<asp:DataPoint AxisLabel="Savings" YValues="10" />
+				<asp:DataPoint AxisLabel="Insurance" YValues="20" />
+				<asp:DataPoint AxisLabel="Education" YValues="30" />
+				<asp:DataPoint AxisLabel="Communication" YValues="40" />
+				
+				<asp:DataPoint AxisLabel="Takeout" YValues="10" />
+				<asp:DataPoint AxisLabel="Groceries" YValues="20" />
+				<asp:DataPoint AxisLabel="Alcohol" YValues="30" />
+				<asp:DataPoint AxisLabel="Entertainment" YValues="40" />
+
+				<asp:DataPoint AxisLabel="Personal" YValues="10" />
+				<asp:DataPoint AxisLabel="Clothing" YValues="20" />
+				<asp:DataPoint AxisLabel="Cash" YValues="30" />
+				<asp:DataPoint AxisLabel="other" YValues="40" />
 
 			</Points>
 		</asp:Series>
 	</Series>
 	<ChartAreas>
 		<asp:ChartArea Name="ChartArea1">
+			<AxisX Title ="Catagories"></AxisX>
+			<AxisY Title ="Spend"></AxisY>
 		</asp:ChartArea>
 
 	</ChartAreas>
