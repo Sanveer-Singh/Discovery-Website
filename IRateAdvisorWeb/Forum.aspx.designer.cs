@@ -11,52 +11,43 @@ namespace IRateAdvisorWeb
 {
 
 
-    public partial class AdvisorDashBoard
+    public partial class Forum
     {
 
         /// <summary>
-        /// Chart1 control.
+        /// searchBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.DataVisualization.Charting.Chart Chart1;
+        protected global::System.Web.UI.WebControls.TextBox searchBox;
 
         /// <summary>
-        /// tier control.
+        /// btnSearch control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl tier;
+        protected global::System.Web.UI.WebControls.Button btnSearch;
 
         /// <summary>
-        /// TierAbove control.
+        /// displayDiv control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl TierAbove;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl displayDiv;
 
         /// <summary>
-        /// MyGoal control.
+        /// error control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl MyGoal;
-
-        /// <summary>
-        /// MyReward control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl MyReward;
+        protected global::System.Web.UI.WebControls.Label error;
     }
 }
