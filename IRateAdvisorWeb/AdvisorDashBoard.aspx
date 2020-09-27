@@ -31,7 +31,7 @@
         </asp:Chart>
           </div>
             <div class="heading-block center">
-			<h2> Your current tier is :<span style="color:#1E90FF;" runat ="server" ID="CurrentTier">  </span>.</h2>
+			<h2> Your current tier is :<span style="color:#1E90FF;" runat ="server" ID="CurrentTier1">  </span>.</h2>
 				<span>(Tiers are ranked from blue to gold.)</span>
                 <h2> Your next tier is :<span style="color:#1E90FF;" runat ="server" ID="TierAbove"> </span>. </h2>
              </div>

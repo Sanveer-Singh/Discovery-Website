@@ -24,18 +24,18 @@ namespace IRateAdvisorWeb
 
 
 
-            string[] tiers = { "Blue","Bronze", "Silver", "Gold" };
+            string[] tiers = { "Blue", "Bronze", "Silver", "Gold" };
             string[] colours = { "#2c5cde", "#ee9850", "#bfc1c3", "#e3b72e" };
             string displayTier = "";
             string displayNextTier = "";
 
             int DiscoveryTier = _tier;
-            displayTier = tiers[DiscoveryTier-1];
+            displayTier = tiers[DiscoveryTier - 1];
 
-            CurrentTier.InnerText = displayTier;
-            CurrentTier.Style.Add("color", colours[DiscoveryTier-1]);
+            CurrentTier1.InnerText = displayTier;
+            CurrentTier1.Style.Add("color", colours[DiscoveryTier - 1]);
 
-           
+
 
             int nextTier = DiscoveryTier;
             if (DiscoveryTier < 4) {
@@ -43,12 +43,12 @@ namespace IRateAdvisorWeb
                 nextTier = DiscoveryTier + 1;
             }
 
-            displayNextTier = tiers[nextTier-1];
+            displayNextTier = tiers[nextTier - 1];
 
             TierAbove.InnerText = displayNextTier;
-            TierAbove.Style.Add("color", colours[nextTier-1]);
+            TierAbove.Style.Add("color", colours[nextTier - 1]);
 
-            var shouldSpend = await client.KMeansAnalysis_getTierSpendAsync(total,nextTier);
+            var shouldSpend = await client.KMeansAnalysis_getTierSpendAsync(total, nextTier);
 
             var tierAbovePercent = client.KMeansAnalysis_getClusterCenterAsync(total, nextTier);
 
@@ -58,29 +58,22 @@ namespace IRateAdvisorWeb
              * 4 - entertainment
              */
 
-                }
-
-            }
-
-            
-            
         }
-        
         protected void ChartSetup(List<double> percents)
         {
             // make data points 
-           
-            string[] myLabels = { "Utilities", "Transport", "Rent", "Loans", "Saving", "Insurance", "Education", "Communication", "Takeout"," Groceries", "Alcohol", "Entertainment", "Personal"," Clothing", "Cash", "Other" }; 
+
+            string[] myLabels = { "Utilities", "Transport", "Rent", "Loans", "Saving", "Insurance", "Education", "Communication", "Takeout", " Groceries", "Alcohol", "Entertainment", "Personal", " Clothing", "Cash", "Other" };
             int counter = 0;
-            List<System.Web.UI.DataVisualization.Charting.DataPoint > points1 = new List<DataPoint>();
-           
+            List<System.Web.UI.DataVisualization.Charting.DataPoint> points1 = new List<DataPoint>();
+
             Series series1 = new Series();
             series1 = Chart1.Series["Testing"];
 
             foreach (var p in percents)
             {
-       
-                series1.Points.AddXY(myLabels[counter],p*100 );
+
+                series1.Points.AddXY(myLabels[counter], p * 100);
                 counter++;
             }
             ChartArea ca = Chart1.ChartAreas["ChartArea1"];
@@ -97,7 +90,7 @@ namespace IRateAdvisorWeb
             List<System.Web.UI.DataVisualization.Charting.DataPoint> points1 = new List<DataPoint>();
 
             Series series2 = new Series();
-            
+
 
             foreach (var p in Clusterpercents)
             {
@@ -106,10 +99,19 @@ namespace IRateAdvisorWeb
                 counter++;
             }
             ChartArea ca = Chart1.ChartAreas["ChartArea1"];
-           
+
             series2.MarkerStyle = MarkerStyle.Circle;
             series2.ChartArea = ca.Name;
 
         }
+
     }
+
+
+    
 }
+
+
+        
+  
+   
