@@ -14,10 +14,10 @@ namespace IRateAdvisorWeb
     {
         protected  void Page_Load(object sender, EventArgs e)      
         {
-            if (Session["USERID"] == null)
-            {
-                Response.Redirect("Login.aspx", false);
-            }
+            //if (Session["USERID"] == null)
+            //{
+            //    Response.Redirect("Login.aspx", false);
+            //}
 
              if (Request.QueryString["answers"] != null)
             {
@@ -91,7 +91,10 @@ namespace IRateAdvisorWeb
                         {
                             sb.Append("<div class='col_full'>");
                             sb.Append($"<label id='{question.Qid}' class='question'>{question.DisplayString}:</label>");
-                            sb.Append($"<input type='text' tabindex='{counter}' id='A{question.Qid}' class='sm-form-control required'/>");
+
+                            sb.Append($"<label >Yes &nbsp;</label>");
+                            sb.Append($"<input class='checkbox-inline' type='checkbox'  id='A{question.Qid}' value='true'>");
+                            //sb.Append($"<input type='text' tabindex='{counter}' id='A{question.Qid}' class='sm-form-control required'/>");
                             sb.Append("</div>");
                             counter++;
                         }

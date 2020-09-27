@@ -26,9 +26,9 @@
                      var ID = $(this).attr('id');
                      //get the text box
                      var textBox = $("#A" + ID);
-                     strKV += ID + ":" + textBox.val()+"|";
+                     strKV += ID + ":" + textBox.prop("checked") == true+"|";
                  });
-
+                 alert(strKV);
                  //alert("Questionnaire.aspx?answers=" + strKV);
                  window.location.href = "Questionnaire.aspx?answers=" + strKV;
                  return false;
@@ -64,6 +64,8 @@
                             <div class="panel panel-default nobottommargin">
                                 <div class="panel-body" style="padding: 40px;">
                                     <div class="nobottommargin" id="QuestionContainer" runat="server">
+                                        "<label class="label-primary"></label>"
+                                        "<input class='checkbox-inline' type='checkbox'  name='gender' value='true'>"
                                         <%--*************************  questions   ************************************--%>
                                             <%--("<div class='fancy-title title-center title-dotted-border'>");
                                                ( "<h3>Answer the following questions</h3>");
