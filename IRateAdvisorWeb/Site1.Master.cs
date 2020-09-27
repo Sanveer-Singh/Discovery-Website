@@ -11,7 +11,17 @@ namespace IRateAdvisorWeb
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if(Session["USERID"] != null)
+            {
+                login_register.HRef = "Logout.aspx";
+                login_register.InnerHtml = "<div>Logout</div>";
 
+            }
+            else
+            {
+                login_register.HRef = "Login.aspx";
+                login_register.InnerHtml = "<div>Login</div>";
+            }
         }
     }
 }
