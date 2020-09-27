@@ -78,7 +78,9 @@ namespace IRateAdvisorWeb
             Session["Total"] = total;
             Session["Percentages"] = percents;
             Session["Rand values"] = values;
-            
+
+            Response.Redirect("AdvisorDashboard.aspx", false);
+
         }
     }
 }

@@ -13,9 +13,9 @@ namespace IRateAdvisorWeb
     {
         Client client = new Client();
 
-        protected async void Page_Load(object sender, EventArgs e)
+        protected  void Page_Load(object sender, EventArgs e)
         {
-            var tier = Convert.ToInt32(Session["D_Tier"]);
+            var _tier = Convert.ToInt32(Session["D_Tier"]);
             var total = Convert.ToDouble(Session["Total"]);
             var percents = (List<double>)Session["Percentages"];
             var values = (List<double>)Session["Rand values"];
@@ -26,12 +26,19 @@ namespace IRateAdvisorWeb
                     0.01313520361773447,  0.0851135717252017,  0.022866715353187465};
 
 
-            string[] tiers = { "Bronze", "Silver", "Gold", "Diamond" };
+            string[] tiers = { "Blue","Bronze", "Silver", "Gold" };
+            string[] colours = { "#2c5cde", "#ee9850", "#bfc1c3", "#e3b72e" };
             string displayTier = "";
             string displayNextTier = "";
 
-            int DiscoveryTier = await client.KMeansAnalysis_postDiscoveryTierAsync(total, percents);
+            int DiscoveryTier = _tier;
             displayTier = tiers[DiscoveryTier];
+
+            Tier.InnerText = displayTier;
+            Tier.Style.Add("color", colours[DiscoveryTier]);
+
+           
+
             int nextTier = DiscoveryTier;
             if (DiscoveryTier < 4) {
 
@@ -39,6 +46,9 @@ namespace IRateAdvisorWeb
             }
 
             displayNextTier = tiers[nextTier];
+
+            TierAbove.InnerText = displayNextTier;
+            TierAbove.Style.Add("color", colours[nextTier]);
 
             var shouldSpend = client.KMeansAnalysis_getTierSpendAsync(total,nextTier);
 
