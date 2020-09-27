@@ -20,8 +20,11 @@ namespace IRateAdvisorWeb
             //TODO : Service call here to get object
             string display = "";
             string imgURL = "https://d1yjjnpx0p53s8.cloudfront.net/styles/logo-thumbnail/s3/012020/thumbnail-discovery_logo_-_full_colour.png?o6Grbgwj5kb6vpMCXGaY_A5aeNuJTERJ&itok=mcA6_zSp";
-            
-            display += HtmlStringGenerator.GetDynamicReportDisplayString("This is test", imgURL, "This is description", "Field1", "This is description 2", "Field2", "Description 3", "Field 3");
+            for(int i = 0; i < 10; i++)
+            {
+                display += HtmlStringGenerator.GetDynamicReportDisplayString($"This is test{i}", imgURL, "This is description", "Field1", "This is description 2", "Field2", "Description 3", "Field 3");
+                display += "</br?"; 
+            }
 
 
             displayDiv.InnerHtml = display;
@@ -65,6 +68,8 @@ namespace IRateAdvisorWeb
             string display = "";
             EmployeeUserReport userReport = await getScam(searchBox.Text);
             //display = Utilities.HtmlStringGenerator();
+
+            displayDiv.InnerHtml = display;
         }
     }
 }
