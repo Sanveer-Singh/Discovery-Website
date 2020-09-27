@@ -23,7 +23,7 @@ namespace IRateAdvisorWeb
             for(int i = 0; i < 10; i++)
             {
                 display += HtmlStringGenerator.GetDynamicReportDisplayString($"This is test{i}", imgURL, "This is description", "Field1", "This is description 2", "Field2", "Description 3", "Field 3");
-                display += "</br?"; 
+                display += "</br>"; 
             }
 
 
