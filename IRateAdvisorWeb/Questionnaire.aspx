@@ -26,7 +26,7 @@
                      var ID = $(this).attr('id');
                      //get the text box
                      var textBox = $("#A" + ID);
-                     strKV += ID + ":" + textBox.prop("checked") == true+"|";
+                     strKV += ID + ":" + textBox.prop('checked') +"[";
                  });
                  alert(strKV);
                  //alert("Questionnaire.aspx?answers=" + strKV);

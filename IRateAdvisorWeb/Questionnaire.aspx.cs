@@ -14,15 +14,15 @@ namespace IRateAdvisorWeb
     {
         protected  void Page_Load(object sender, EventArgs e)      
         {
-            //if (Session["USERID"] == null)
-            //{
-            //    Response.Redirect("Login.aspx", false);
-            //}
+            if (Session["USERID"] == null)
+            {
+                Response.Redirect("Login.aspx", false);
+            }
 
-             if (Request.QueryString["answers"] != null)
+            if (Request.QueryString["answers"] != null)
             {
                 string answers = Request.QueryString["answers"];
-                string[] answerBits = answers.Split('|');
+                string[] answerBits = answers.Split('[');
                 List<Answer> answerList = new List<Answer>();
                 foreach(var bit in answerBits)
                 {
