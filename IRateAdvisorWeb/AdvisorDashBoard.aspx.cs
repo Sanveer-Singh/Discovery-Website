@@ -62,7 +62,8 @@ namespace IRateAdvisorWeb
 
             }
 
-
+            
+            
         }
         
         protected void ChartSetup(List<double> percents)
