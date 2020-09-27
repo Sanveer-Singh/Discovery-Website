@@ -52,7 +52,8 @@ namespace IRateAdvisorWeb
             }
             catch(Exception ex)
             {
-                error.Text = "Could not find scam";
+                Response.Redirect("Questionnaire.aspx", false);
+              //  error.Text = "Could not find scam";
             }
 
             if(temp != null)
