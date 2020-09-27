@@ -16,7 +16,7 @@ namespace IRateAdvisorWeb
 
         }
 
-        protected void btnSubmit_Click(object sender, EventArgs e)
+        protected async void btnSubmit_Click(object sender, EventArgs e)
         {
             string _Utilities,_Transport_Petrol, _Rent , _Paying_Loans, 
                     _Saving_Investment, _Insurance_Medical,_Education,_Communication,
@@ -60,7 +60,16 @@ namespace IRateAdvisorWeb
             values[1] = Convert.ToDouble(_Other);
             values[1] = Convert.ToDouble(_Communication);
 
+            double total = values.Sum();
+            
+            var percents = await client.KMeansAnalysis_postRandToPercentAsync(values);
 
+            int tier = await client.KMeansAnalysis_postDiscoveryTierAsync(total, percents);
+
+            Session["D_Tier"] = tier;
+            Session["Total"] = total;
+            Session["Percentages"] = percents;
+            Session["Rand values"] = values;
             
         }
     }

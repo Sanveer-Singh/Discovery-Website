@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="UserInput.aspx.cs" Inherits="IRateAdvisorWeb.UserInput" %>
+﻿<%@ Page Title="" Language="C#" Async="true" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="UserInput.aspx.cs" Inherits="IRateAdvisorWeb.UserInput" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
      <script src="js/jquery.js"></script>
     <script type="text/javascript">
