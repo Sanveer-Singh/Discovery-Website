@@ -47,13 +47,54 @@ namespace IRateAdvisorWeb
 
             var shouldSpend = await client.KMeansAnalysis_getTierSpendAsync(total, nextTier);
 
-            var tierAbovePercent = client.KMeansAnalysis_getClusterCenterAsync(total, nextTier);
+            List<double> TierAbovePercents = null;
+            var temp = await client.KMeansAnalysis_getClusterCenterAsync(total, nextTier);
+            TierAbovePercents = temp.ToList();
+
 
             /* 1 - alcohol
              * 2 - takeout
              * 3 - cash
              * 4 - entertainment
              */
+
+            string goalField = "";
+            double amountDecrease = 0;
+            string finalText = "";
+
+            if (TierAbovePercents[10] < percents[10])
+            { // alcohol
+                goalField = "Alcohol Spending";
+                amountDecrease = total * percents[10] - total * TierAbovePercents[10];
+                finalText = "Reduce " + goalField + " by R" + Math.Round(amountDecrease,2).ToString();
+
+            }
+            else if (TierAbovePercents[8] < percents[8])
+            { // takeout
+                goalField = "Takeout Spending";
+                amountDecrease = total * percents[8] - total * TierAbovePercents[8];
+                finalText = "Reduce " + goalField + " by R" + Math.Round(amountDecrease, 2).ToString();
+            }
+            else if (TierAbovePercents[14] < percents[14])
+            { //cash
+                goalField = "Cash Withdrawals";
+                amountDecrease = total * percents[14] - total * TierAbovePercents[14];
+                finalText = "Reduce " + goalField + " by R" + Math.Round(amountDecrease, 2).ToString();
+            }
+            else if (TierAbovePercents[11] < percents[11])
+            { // entertainment
+                amountDecrease = total * percents[11] - total * TierAbovePercents[11];
+                goalField = "Entertainment Spending";
+                finalText = "Reduce " + goalField + " by R" + Math.Round(amountDecrease, 2).ToString();
+            }
+            else 
+            {
+                //if none of the above
+                finalText = "Nothing! You have no bad spending habits";
+            }
+
+            MyGoal.InnerText = finalText;
+
 
         }
         protected void ChartSetup(List<double> percents)

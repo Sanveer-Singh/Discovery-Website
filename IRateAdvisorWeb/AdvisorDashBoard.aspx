@@ -36,9 +36,9 @@
                 <h2> Your next tier is :<span style="color:#1E90FF;" runat ="server" ID="TierAbove"> </span>. </h2>
              </div>
          <div class="heading-block center">
-			<h2> Your currrent goal is :<span style="color:#1E90FF;" runat ="server" ID="MyGoal"> Goal </span>. </h2>
-				<span>Your custom goal will be rewarded with:</span>
-                <h2> Reward:<span style="color:#1E90FF;" runat ="server" ID="MyReward"> MyReward</span>. </h2>
+			<h2> Your currrent goal is :<span style="color:#1E90FF;" runat ="server" ID="MyGoal">  </span>. </h2>
+				
+                
              </div>
         
     </div>
