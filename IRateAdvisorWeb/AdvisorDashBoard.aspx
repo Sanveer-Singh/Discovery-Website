@@ -5,7 +5,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <div class="content-wrap">
         <div class="heading-block center">
-			<h2> Spend data analysed by<span style="color:#1E90FF;"> I_Rate_Advisor </span>: </h2>
+			<h2> Your current spend data analysed by<span style="color:#1E90FF;"> I_Rate_Advisor </span>: </h2>
 				<span>(Spending is catagorized by 16 different spending types.)</span>
 
         </div>
@@ -29,6 +29,33 @@
 
 	</ChartAreas>
         </asp:Chart>
+          </div>
+
+<div class="heading-block center">
+	  <div class="heading-block center">
+			<h2> Spend data of the people in the <span style="color:#1E90FF;"> tier above you. </span>: </h2>
+				<span>(Spending is catagorized by 16 different spending types.)</span>
+
+        </div>
+		 <asp:Chart ID="Chart2" runat="server" Height="500" Width="1200px">
+			 
+           <Series>
+			<asp:Series Name="Testing" YValueType="Int32">
+
+				<Points>
+				
+
+				</Points>
+				</asp:Series>
+			</Series>
+		<ChartAreas>
+			<asp:ChartArea Name="ChartArea1">
+				<AxisX Title ="Catagories"></AxisX>
+				<AxisY Title ="Spend"></AxisY>
+			</asp:ChartArea>
+	
+		</ChartAreas>
+			</asp:Chart>
           </div>
             <div class="heading-block center">
 			<h2> Your current tier is :<span style="color:#1E90FF;" runat ="server" ID="CurrentTier1">  </span>.</h2>
