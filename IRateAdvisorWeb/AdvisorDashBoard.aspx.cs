@@ -21,9 +21,6 @@ namespace IRateAdvisorWeb
             var percents = (List<double>)Session["Percentages"];
             var values = (List<double>)Session["Rand values"];
 
-
-
-
             string[] tiers = { "Blue", "Bronze", "Silver", "Gold" };
             string[] colours = { "#2c5cde", "#ee9850", "#bfc1c3", "#e3b72e" };
             string displayTier = "";
