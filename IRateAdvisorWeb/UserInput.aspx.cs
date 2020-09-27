@@ -23,7 +23,7 @@ namespace IRateAdvisorWeb
                     _Takeoutfood,_Groceries,_Alcohol_Cigarettes,_Entertainment,
                     _PersonalFamily,_Clothing,_Cash,_Other = "";
 
-            double[] values = new double[16];
+            List<double> values = new List<double>();
 
             _Utilities = Utilities.Text;
             _Transport_Petrol = Transport.Text;
@@ -41,24 +41,24 @@ namespace IRateAdvisorWeb
             _Cash = Cash.Text;
             _Other = Other.Text;
             _Communication = Communication.Text;
-        
 
-            values[0] = Convert.ToDouble(_Utilities);
-            values[1] = Convert.ToDouble(_Transport_Petrol);
-            values[2] = Convert.ToDouble(_Rent);
-            values[3] = Convert.ToDouble(_Paying_Loans);
-            values[4] = Convert.ToDouble(_Saving_Investment);
-            values[5] = Convert.ToDouble(_Insurance_Medical);
-            values[6] = Convert.ToDouble(_Education);
-            values[7] = Convert.ToDouble(_Takeoutfood);
-            values[8] = Convert.ToDouble(_Groceries);
-            values[9] = Convert.ToDouble(_Alcohol_Cigarettes);
-            values[10] = Convert.ToDouble(_Entertainment);
-            values[11] = Convert.ToDouble(_PersonalFamily);
-            values[12] = Convert.ToDouble(_Clothing);
-            values[13] = Convert.ToDouble(_Cash);
-            values[14] = Convert.ToDouble(_Other);
-            values[15] = Convert.ToDouble(_Communication);
+
+            values.Add(Convert.ToDouble(_Utilities));
+            values.Add(Convert.ToDouble(_Transport_Petrol));
+            values.Add(Convert.ToDouble(_Rent));
+            values.Add(Convert.ToDouble(_Paying_Loans));
+            values.Add(Convert.ToDouble(_Saving_Investment));
+            values.Add(Convert.ToDouble(_Insurance_Medical));
+            values.Add(Convert.ToDouble(_Education));
+            values.Add(Convert.ToDouble(_Takeoutfood));
+            values.Add(Convert.ToDouble(_Groceries));
+            values.Add(Convert.ToDouble(_Alcohol_Cigarettes));
+            values.Add(Convert.ToDouble(_Entertainment));
+            values.Add(Convert.ToDouble(_PersonalFamily));
+            values.Add(Convert.ToDouble(_Clothing));
+            values.Add(Convert.ToDouble(_Cash));
+            values.Add(Convert.ToDouble(_Other));
+            values.Add(Convert.ToDouble(_Communication));
 
             double total = values.Sum();
             List<double> percents = null;
