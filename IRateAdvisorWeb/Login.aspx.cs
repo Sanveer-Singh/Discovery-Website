@@ -1,7 +1,9 @@
 ﻿using IRateAdvisorWeb.Services;
 using System;
 using System.Collections.Generic;
+using System.EnterpriseServices;
 using System.Linq;
+using System.Threading.Tasks;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
@@ -47,7 +49,7 @@ namespace IRateAdvisorWeb
                         Session["USERID"] = response.UserId;
                         Session["USERNAME"] = response.Username;
 
-                        var user = await client.Users_GetUsersAsync(response.UserId);
+                        var user =  await GetUser(response.UserId);
 
                         if(user != null)
                         {
@@ -56,8 +58,14 @@ namespace IRateAdvisorWeb
 
                         }
 
-                        var employee = await client.
+                        var employee = await GetEmployee(response.UserId);
+                        if(employee != null)
+                        {
+                            Session["EMPLOYEEID"] = employee;
 
+                        }
+
+                        Response.Redirect("AdvisorDashBoard.aspx", false);
 
                     }
 
@@ -72,6 +80,7 @@ namespace IRateAdvisorWeb
             }
 
            
+           
             //IRateAdvisorWeb.Client client = new IRateAdvisorWeb.Client();
             // var result = await client.LoginUserAsync(Username,Pass);
             // user my user = (IRateAdvisorWeb.Client.User )result
@@ -85,6 +94,46 @@ namespace IRateAdvisorWeb
             // so
             //Session["ID"] = result.UserId;
             //}
+        }
+
+        private async Task<Employee> GetEmployee(int id)
+        {
+            Users response = null;
+            Employee employee = null;
+            try
+            {
+                using (Client client = new Client())
+                {
+
+                    response = await client.Users_GetUsersAsync(id);
+                }
+               
+            }
+            catch (Exception ex)
+            {
+
+            }
+          
+            return employee;
+        }
+
+        private async Task<Users> GetUser(int id)
+        {
+            Users user = null;
+            try
+            {
+                using (Client client = new Client())
+                {
+
+                    user = await client.Users_GetUsersAsync(id);
+                }
+            }
+            catch (Exception ex)
+            {
+
+            }
+
+            return user;
         }
     }
 }
